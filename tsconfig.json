@@ -19,5 +19,6 @@
     "stripInternal": true,
     "declaration": false,
     "typeRoots": ["./node_modules/@types"]
-  }
+  },
+  "exclude": ["./assets", "./build", "./node_modules"]
 }

@@ -1,0 +1,62 @@
+@import "./Footer/style.scss";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+$playfair-font: "Playfair Display", serif;
+
+$image-height: 607px;
+$image-width: 910px;
+$background-image: url("../../assets/background.jpeg");
+
+.home {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+
+  height: $image-height;
+  width: $image-width;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 500;
+  color: rgb(251, 255, 0);
+}
+
+.home__top-part-container {
+  padding: 0 0 30px 0;
+}
+
+.home__full-name {
+  padding: 0 0 0 0;
+  font-size: 45px;
+  font-weight: 500;
+  color: rgb(255, 217, 0);
+}
+
+.home__job-name {
+  padding: 20px 0 0 0;
+  font-size: 30px;
+}
+
+.home__skills-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-self: center;
+  white-space: pre-wrap;
+  padding: 0;
+  max-width: 500px;
+}
+
+.home__skills-list__skill {
+  font-size: 20px;
+  font-family: $playfair-font, "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  color: rgb(251, 255, 0);
+  text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
