@@ -7,7 +7,7 @@ module.exports = {
   mode: "production",
   devtool: "source-map",
   entry: {
-    preload: path.resolve(__dirname, "./src/index.ts"),
+    index: path.resolve(__dirname, "./src/index.ts"),
     style: path.resolve(__dirname, "./src/style.ts"),
   },
 
@@ -20,7 +20,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: "./index.html",
     }),
   ],
   module: {
