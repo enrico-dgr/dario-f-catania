@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "build:dev": "concurrently \"npx webpack --config webpack.config.js --watch\" \"npx webpack serve\"",
-    "build:prod": "npx webpack --config webpack.config-prod.js"
+    "build:prod": "rimraf ../build && npx webpack --config webpack.config-prod.js"
   },
   "repository": {
     "type": "git",

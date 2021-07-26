@@ -1,5 +1,0 @@
-name: Build
-on: push
-
-jobs:
-  run: npm run build:prod
