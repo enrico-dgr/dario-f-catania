@@ -24,6 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100vh * ($image-width/$image-height) 100vh;
   background-position: center;
+  background-origin: content-box;
   width: 100vw;
   height: 100vh;
   border: 2px solid black;
@@ -31,9 +32,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 
   text-align: center;
 
@@ -76,4 +74,11 @@ body {
   font-style: italic;
   color: rgb(251, 255, 0);
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+@media screen and (max-width: 767px) {
+  .home {
+    $shift: 65px;
+    padding-bottom: $shift;
+  }
 }
