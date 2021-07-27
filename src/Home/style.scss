@@ -3,16 +3,30 @@
 
 $playfair-font: "Playfair Display", serif;
 
-$image-height: 607px;
-$image-width: 910px;
 $background-image: url("../../assets/background.jpeg");
+$background-scale: 1.6;
+$image-height: 607;
+$image-width: 910;
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#reactApp {
+  display: flex;
+}
 
 .home {
   background-image: $background-image;
   background-repeat: no-repeat;
-
-  height: $image-height;
-  width: $image-width;
+  background-size: 100vh * ($image-width/$image-height) 100vh;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  border: 2px solid black;
 
   display: flex;
   flex-direction: column;
