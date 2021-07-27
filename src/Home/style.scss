@@ -76,9 +76,3 @@ body {
   color: rgb(251, 255, 0);
   text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
-
-@media (max-height: 767px) {
-  .home {
-    max-height: 95vh;
-  }
-}
